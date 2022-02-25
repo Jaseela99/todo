@@ -4,9 +4,9 @@ import Todo from "./Todo";
 function TodoList({ todos, toggleComplete }) {
   return (
     <ul>
-      {todos.map((todo) => (
+      {todos.map((todo,index) => (
         <Todo
-          key={todo.id}
+          key={index}
           todo={todo}
           toggleComplete={toggleComplete}
           removeTodo={removeTodo}

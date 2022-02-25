@@ -2,10 +2,10 @@ import React from "react";
 
 function Todo({ todo, toggleComplete, removeTodo }) {
   function handleCheckboxClick() {
-    toggleComplete(todo.id);
+    toggleComplete(index);
   }
   function handleRemoveToClick() {
-    removeTodo(todo.id);
+    removeTodo(index);
   }
 
   return (
